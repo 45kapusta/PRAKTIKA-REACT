@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PRAKTIKA-REACT/static/css/main.ff7dff6d.css",
-    "main.js": "/PRAKTIKA-REACT/static/js/main.23dd76ab.js",
+    "main.js": "/PRAKTIKA-REACT/static/js/main.a07c94ed.js",
     "index.html": "/PRAKTIKA-REACT/index.html",
     "main.ff7dff6d.css.map": "/PRAKTIKA-REACT/static/css/main.ff7dff6d.css.map",
-    "main.23dd76ab.js.map": "/PRAKTIKA-REACT/static/js/main.23dd76ab.js.map"
+    "main.a07c94ed.js.map": "/PRAKTIKA-REACT/static/js/main.a07c94ed.js.map"
   },
   "entrypoints": [
     "static/css/main.ff7dff6d.css",
-    "static/js/main.23dd76ab.js"
+    "static/js/main.a07c94ed.js"
   ]
 }
