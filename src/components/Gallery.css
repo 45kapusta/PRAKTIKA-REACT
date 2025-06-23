@@ -1,0 +1,80 @@
+section.gallery {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  text-shadow: 0 0 10px #840000;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Разрешаем перенос кнопок на мобильных устройствах */
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #333;
+  color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background: #840000;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Уменьшаем минимальную ширину для лучшей адаптивности */
+  gap: 20px; /* Увеличиваем расстояние между изображениями */
+}
+
+.gallery-item {
+  overflow: hidden; /* Убираем возможные переполнения */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Легкая тень для выделения */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обрезаем изображение, сохраняя пропорции */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 5px #840000;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Уменьшаем размер ячеек на мобильных */
+  }
+
+  .filter-buttons button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Один столбец на очень маленьких экранах */
+  }
+}

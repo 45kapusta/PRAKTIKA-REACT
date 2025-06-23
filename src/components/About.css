@@ -1,0 +1,32 @@
+section.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.photo {
+    width: 200%;
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    text-align: left;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.content h3 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
